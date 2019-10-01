@@ -1,3 +1,18 @@
+Tom's Notes
+===========
+
+This is a fork of [`PriyankaHanumansetti/instagram-ruby-gem` branch
+`fix-for-nil-data`](https://github.com/PriyankaHanumansetti/instagram-ruby-gem/tree/fix-for-nil-data),
+which is itself a fork of the unmaintained gem [`facebookarchive/instagram-ruby-gem`](https://github.com/facebookarchive/instagram-ruby-gem).
+
+This repo was created so that we can apply our own fixes, specifically: so that
+I can upgrade the dependencies that are being blocked by this gem.
+
+Old `README.md` is below.
+
+----
+
+
 - - -
 
 **_This project is not actively maintained. Proceed at your own risk!_**

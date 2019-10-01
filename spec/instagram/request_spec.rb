@@ -16,7 +16,7 @@ describe Instagram::Request do
         url = client.send(:connection).build_url("/media/123/likes.json").to_s
         stub_request(:post, url).
           with(:body => {"access_token"=>"AT"}).
-          to_return(:status => 200, :body => "", :headers => {})
+          to_return(:status => 200, :body => "{}", :headers => {})
 
         client.post("/media/123/likes", {}, signature=true)
         a_request(:post, url).
@@ -29,7 +29,7 @@ describe Instagram::Request do
         url = client.send(:connection).build_url("/media/123/likes.json").to_s
         stub_request(:post, url).
           with(:body => {"access_token"=>"AT"}).
-          to_return(:status => 200, :body => "", :headers => {})
+          to_return(:status => 200, :body => "{}", :headers => {})
 
         client.post("/media/123/likes", {}, signature=true)
         a_request(:post, url).
@@ -44,7 +44,7 @@ describe Instagram::Request do
         url = client.send(:connection).build_url("/media/123/likes.json").to_s
         stub_request(:post, url).
           with(:body => {"access_token"=>"AT"}).
-          to_return(:status => 200, :body => "", :headers => {})
+          to_return(:status => 200, :body => "{}", :headers => {})
 
         client.post("/media/123/likes", {}, signature=false)
         a_request(:post, url).

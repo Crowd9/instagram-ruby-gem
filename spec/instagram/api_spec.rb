@@ -266,6 +266,7 @@ describe Instagram::API do
         end
 
         it "should redact API keys" do
+          ENV.stub(:[]).and_call_original
           ENV.stub(:[]).with('http_proxy').and_return(nil)
           ENV.stub(:[]).with('INSTAGRAM_GEM_REDACT').and_return('true')
 
